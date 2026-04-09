@@ -1,13 +1,13 @@
 import "../styles/sidebar.css";
 import logo from "../public/Logo.png";
 import logoG from "../public/Logo-Gerald.png"; // logo de agencia
-import { LayoutDashboard, Droplet, Package, Users, Truck } from "lucide-react";
+import { LayoutDashboard, ShoppingCart, Package, Users, Truck } from "lucide-react";
 
 export default function Sidebar({ currentPage, setCurrentPage }) {
   // Se reemplazan los strings de emojis por referencias a los componentes de Lucide
   const menuItems = [
     { id: "dashboard", label: "Dashboard", Icon: LayoutDashboard },
-    { id: "ventas", label: "Ventas", Icon: Droplet },
+    { id: "ventas", label: "Ventas", Icon: ShoppingCart },
     { id: "productos", label: "Productos", Icon: Package },
     { id: "clientes", label: "Clientes", Icon: Users },
     { id: "stock", label: "Stock", Icon: Truck },
